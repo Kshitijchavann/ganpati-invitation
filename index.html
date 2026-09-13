@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ganeshotsav 2024 | RETECK ENVIROTECH PVT LTD</title>
+  <title>Ganeshotsav 2026 | RETECK ENVIROTECH PVT LTD</title>
   <meta name="description" content="Cordially inviting you to the auspicious Ganeshotsav Celebrations hosted by RETECK ENVIROTECH PVT LTD at Additional Patalganga, Raigad." />
   <meta property="og:title" content="Ganeshotsav Invitation | RETECK ENVIROTECH PVT LTD" />
   <meta property="og:description" content="Join us for Ganesh Aagman & Puja on 14th & 15th September at Patalganga." />
-  <meta property="og:image" content="assets/ganesh-ivory.jpg" />
+  <meta property="og:image" content="ganesh-ivory.jpg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,13 +102,6 @@
     .corner-bl { bottom: 8px; left: 8px; transform: scaleY(-1); }
     .corner-br { bottom: 8px; right: 8px; transform: scale(-1); }
 
-    /* Gold Metallic Foil Gradient Text */
-    .gold-foil-text {
-      background: linear-gradient(135deg, #8A6510 0%, #C59B27 35%, #594005 60%, #B88B1C 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
     /* Corporate Forest Green Gradient Text */
     .forest-gradient-text {
       background: linear-gradient(135deg, #103328 0%, #164636 50%, #205946 100%);
@@ -168,13 +161,13 @@
 
 <body class="min-h-screen relative font-sans overflow-x-hidden">
 
-  <!-- Interactive Floating Petals & Golden Sparkles Canvas -->
+  <!-- Interactive Floating Petals Canvas -->
   <canvas id="particleCanvas"></canvas>
 
   <!-- Traditional Motif Texture Overlay -->
   <div class="fixed inset-0 mandala-bg pointer-events-none opacity-40 z-0"></div>
 
-  <!-- Top Floating Utilities Header -->
+  <!-- Top Floating Header -->
   <header class="sticky top-2 z-40 max-w-xl mx-auto px-4 py-2 flex items-center justify-between pointer-events-auto">
     <!-- Sacred Invocation Pill -->
     <div class="px-3.5 py-1.5 rounded-full bg-white/95 border border-gold/40 shadow-md backdrop-blur-sm flex items-center gap-2">
@@ -182,9 +175,8 @@
       <span class="text-xs font-serif font-bold text-forest-800 tracking-wider">॥ श्री गणेशाय नमः ॥</span>
     </div>
 
-    <!-- Interactive Utilities (Bell & Confetti) -->
+    <!-- Bell & Confetti Buttons -->
     <div class="flex items-center gap-2">
-      <!-- Temple Bell Toggle -->
       <button 
         id="bellBtn" 
         title="Ring Temple Bell" 
@@ -195,7 +187,6 @@
         </svg>
       </button>
 
-      <!-- Shower Petals / Celebration -->
       <button 
         id="confettiTopBtn" 
         title="Shower Festive Petals" 
@@ -214,7 +205,7 @@
     <!-- MASTER ROYAL INVITATION CARD -->
     <article class="royal-card rounded-3xl p-5 sm:p-8 relative">
 
-      <!-- Corner Ornaments (Traditional Brass/Gold Foil) -->
+      <!-- Corner Ornaments -->
       <svg class="corner-decor corner-tl" viewBox="0 0 60 60" fill="none" stroke="#C59B27">
         <path d="M4,56 L4,12 C4,7 7,4 12,4 L56,4" stroke-width="2.5" />
         <circle cx="4" cy="4" r="3" fill="#C59B27" />
@@ -242,12 +233,12 @@
 
       <!-- 1. CORPORATE HEADER & LOGO -->
       <section class="text-center pt-2 pb-4">
-        <!-- Official Logo Container -->
         <div class="inline-block p-3 rounded-2xl bg-white border border-gold/30 shadow-sm mb-3">
           <img 
-            src="assets/re-teck-logo.png" 
+            src="re-teck-logo.png" 
             alt="Re-Teck - A Black Gold Company" 
             class="h-11 sm:h-13 object-contain px-2 mx-auto" 
+            onerror="this.src='./re-teck-logo.png'"
           />
         </div>
 
@@ -261,7 +252,7 @@
         </div>
       </section>
 
-      <!-- 2. SANSKRIT SHLOKA (SACRED INVOCATION) -->
+      <!-- 2. SANSKRIT SHLOKA -->
       <section class="my-3 p-4 rounded-2xl bg-skin-100 border border-gold/40 text-center relative shadow-sm">
         <div class="text-[11px] font-serif font-bold tracking-widest text-gold-dark uppercase mb-1">
           ✦ मङ्गल श्लोक ✦
@@ -275,25 +266,24 @@
         </p>
       </section>
 
-      <!-- 3. DIVINE GANESHA HERO PORTRAIT (WARM IVORY THEME) -->
+      <!-- 3. DIVINE GANESHA HERO PORTRAIT -->
       <section class="my-5 flex flex-col items-center">
-        <!-- Traditional Royal Arch Frame with Subtle Gold Halo -->
         <div class="relative w-64 h-64 sm:w-72 sm:h-72 p-2 rounded-full bg-gradient-to-b from-gold-light via-gold to-gold-dark shadow-xl">
           <div class="w-full h-full rounded-full overflow-hidden border-2 border-white shadow-inner bg-skin-50 relative">
             <img 
-              src="assets/ganesh-ivory.jpg" 
+              src="ganesh-ivory.jpg" 
               alt="Lord Ganesha Divine Blessings" 
               class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
+              onerror="this.src='ganesh-hero.jpg'"
             />
           </div>
 
-          <!-- Auspicious Diya Lighting Button -->
+          <!-- Diya Lighting Button -->
           <button 
             id="diyaBtn" 
             title="Click to Light Auspicious Diya" 
             class="absolute -bottom-2 right-4 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-gold shadow-lg hover:border-gold-dark transition-all cursor-pointer group"
           >
-            <!-- Diya Flame -->
             <span class="w-4 h-5 inline-block diya-flame">
               <svg viewBox="0 0 24 24" fill="none">
                 <path d="M12 2C12 2 6 9 6 15C6 18.3137 8.68629 21 12 21C15.3137 21 18 18.3137 18 15C18 9 12 2 12 2Z" fill="url(#flameColor)" />
@@ -311,7 +301,6 @@
           </button>
         </div>
 
-        <!-- Grand Occasion Title -->
         <div class="mt-5 text-center space-y-1">
           <span class="text-xs uppercase tracking-[0.25em] text-kumkum font-bold font-serif">
             ✦ श्री गणेश चतुर्थी महोत्सव ✦
@@ -332,10 +321,9 @@
         </svg>
       </div>
 
-      <!-- 4. EVENT DETAILS (DATES & VENUE STACK) -->
+      <!-- 4. EVENT DETAILS (DATES & VENUE) -->
       <section class="space-y-4 my-4">
-
-        <!-- DATES & SCHEDULE CARD -->
+        <!-- Dates Card -->
         <div class="p-4 sm:p-5 rounded-2xl bg-skin-100 border border-gold/50 shadow-sm relative overflow-hidden">
           <div class="flex items-start gap-3">
             <div class="w-10 h-10 rounded-xl bg-forest-800 text-gold-shimmer flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -354,7 +342,7 @@
           </div>
         </div>
 
-        <!-- SACRED VENUE CARD -->
+        <!-- Venue Card -->
         <div class="p-4 sm:p-5 rounded-2xl bg-skin-100 border border-gold/50 shadow-sm relative overflow-hidden">
           <div class="flex items-start gap-3">
             <div class="w-10 h-10 rounded-xl bg-forest-800 text-gold-shimmer flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -373,14 +361,12 @@
             </div>
           </div>
 
-          <!-- Full Address -->
           <address class="not-italic text-xs sm:text-sm text-forest-900 leading-relaxed mt-2 pl-0.5">
             <strong class="font-semibold text-forest-900">Plot No. F7, Additional Patalganga,</strong><br />
             Chavane Village, Raigad,<br />
             Maharashtra 410220, India.
           </address>
         </div>
-
       </section>
 
       <!-- 5. HEARTFELT MESSAGE CARD -->
@@ -400,7 +386,7 @@
         </div>
       </section>
 
-      <!-- 6. DIRECT ACTION BUTTONS (MOBILE-OPTIMIZED) -->
+      <!-- 6. DIRECT ACTION BUTTONS -->
       <section class="mt-6 space-y-2.5">
         <div class="text-center mb-2">
           <span class="text-[11px] font-serif font-bold uppercase tracking-widest text-gold-dark">
@@ -428,7 +414,7 @@
             id="mapsBtn" 
             href="https://www.google.com/maps/search/?api=1&query=Plot+No.+F7%2C+Additional+Patalganga%2C+Chavane+Village%2C+Raigad%2C+Maharashtra+410220%2C+India" 
             target="_blank" 
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" 
             class="btn-action flex items-center justify-center gap-2 px-3.5 py-3 rounded-xl bg-white text-forest-900 font-semibold text-xs sm:text-sm shadow-sm border border-gold hover:bg-skin-50 text-center"
           >
             <svg class="w-4 h-4 text-kumkum flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -450,7 +436,7 @@
           </button>
         </div>
 
-        <!-- Copy Invitation Link / Text -->
+        <!-- Copy Invitation Link -->
         <div class="text-center pt-2">
           <button 
             id="copyInviteBtn" 
@@ -507,9 +493,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-      // ==========================================
       // 1. Google Calendar Link
-      // ==========================================
       const calBtn = document.getElementById('calBtn');
       if (calBtn) {
         const year = new Date().getFullYear();
@@ -525,9 +509,7 @@
         calBtn.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${loc}`;
       }
 
-      // ==========================================
       // 2. WhatsApp Share & Copy Text
-      // ==========================================
       const inviteText = 
 `🙏 *॥ श्री गणेशाय नमः ॥* 🙏
 
@@ -592,9 +574,7 @@ _A Black Gold Company_`;
         }, 3000);
       }
 
-      // ==========================================
-      // 3. Realistic Web Audio Temple Bell Synth
-      // ==========================================
+      // 3. Web Audio Temple Bell Synth
       let audioCtx = null;
       function playTempleBell() {
         try {
@@ -604,7 +584,6 @@ _A Black Gold Company_`;
           if (audioCtx.state === 'suspended') audioCtx.resume();
 
           const now = audioCtx.currentTime;
-          // Authentic Indian brass temple bell partial frequencies & acoustic decay
           const partials = [
             { freq: 587.3, gain: 0.7, decay: 3.2 },
             { freq: 1174.6, gain: 0.45, decay: 2.6 },
@@ -666,9 +645,7 @@ _A Black Gold Company_`;
         });
       }
 
-      // ==========================================
       // 4. Confetti Celebrations
-      // ==========================================
       function triggerConfetti(x = 0.5, y = 0.5) {
         if (typeof confetti !== 'function') return;
         confetti({
@@ -703,9 +680,7 @@ _A Black Gold Company_`;
         triggerConfetti(0.5, 0.3);
       }, 600);
 
-      // ==========================================
-      // 5. Floating Petals Canvas (Marigolds, Jasmine)
-      // ==========================================
+      // 5. Floating Petals Canvas
       const canvas = document.getElementById('particleCanvas');
       if (canvas) {
         const ctx = canvas.getContext('2d');
